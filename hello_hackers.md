@@ -1,4 +1,4 @@
-# Hello Hackers
+"# Hello Hackers
 
 First module from pwn.college based on execution of commands.
 
@@ -6,7 +6,7 @@ First module from pwn.college based on execution of commands.
 
 The challenge description mentioned that running the 'hello' command would return the required flag.
 
-After logging into the challenge via SSH, the prompt displays as: 'hacker@hello~intro-to-commands:~$'.
+After logging into the challenge via SSH, the prompt displays as: ' hacker@hello~intro-to-commands:~$ '.
 
 Similar to how 'whoami' is executed by typing it into the prompt and pressing enter, typing 'hello' and pressing enter retrieves the flag: 'pwn.college{sr40jWrcdLnVz3detjgOaqPDm6O.ddjNyUDLwQjN0czW}'.
 
