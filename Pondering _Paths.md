@@ -45,7 +45,7 @@ cd /proc/67
 ```
 flag: `pwn.college{ApjN-kzbt7L3L_Zdju0GXUGF0aH.dhDN1QDLwQjN0czW}`
 
-#Implicit Relative Paths from Root
+# Implicit Relative Paths from Root
 
 The flag can be retrieved using a relative path. The challenge requires running the program from the / directory using its relative path:
 
@@ -56,7 +56,7 @@ challenge/run
 
 flag:`pwn.college{cq4yxbNeUIrj-hFVqFdrIfgabqO.dlDN1QDLwQjN0czW}`
 
-#Explicit Relative Paths from Root
+# Explicit Relative Paths from Root
 
 Similar to the previous challenge, but now the relative path must begin with `.` . Running the following retrieves the flag.
 
@@ -67,7 +67,7 @@ cd /
 
 flag:`pwn.college{4uCeszewFX50E1nrn165Vqgcw9I.dBTN1QDLwQjN0czW}`
 
-#Implicit Relative Path
+# Implicit Relative Path
 
 Here, the working directory must be `/challenge`, but run cannot be executed directly due to Linux safety measures. Using `./run` explicitly retrieves the flag.
 
@@ -79,7 +79,7 @@ cd /challenge
 flag:`pwn.college{U24Qx8jPfTAaZgqITImNB2qRbmq.dFTN1QDLwQjN0czW}`
 
 
-#Home Sweet Home
+# Home Sweet Home
 
 In this challenge, the program `/challenge/run` requires an argument that specifies the path of a file where the flag will be written. 
 The argument must be an absolute path in the home directory, no longer than 3 characters. The shorthand `~` can be used to represent the home directory:
