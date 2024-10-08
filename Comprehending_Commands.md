@@ -97,45 +97,53 @@ The quest begins in the root directory: `cd /`
 Upon using `ls`, a file called REVELATION is visible.
 
 `cat REVELATION` reads:
-
+```
 **Great sleuthing!**
 The next clue is in: `/opt/linux/linux-5.4/drivers/misc/sgi-xp`
+```
 
 Navigating to `/opt/linux/linux-5.4/drivers/misc/sgi-xp` and running `ls` reveals a file named GIST. 
 
 `cat GIST` reads:
-
+```
 **Tubular find!**
 The next clue is in: `/opt/linux/linux-5.4/include/config/snd/support`
 
 The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+```
 
 After changing to `/opt/linux/linux-5.4/include/config/snd/support`, running `ls` reveals a file called `README`.
 
 `cat README` reads:
 
+```
 The next clue is in: `/opt/aflplusplus/qemu_mode/qemuafl/.gitlab-ci.d/edk2`
 
 The next clue is **hidden** --- its filename starts with a `.` character. Use special options to `ls` to find it.
+```
 
 Running `ls -a` in the directory reveals a hidden file named `.WHISPER`.
 
 `cat .WHISPER` reads:
 
+```
 **Tubular find!**
 The next clue is in: `/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib/Lower`
 
 Watch out! The next clue is **trapped**. You must read it without `cd`-ing into the directory, or the clue will self-destruct!
+```
 
 Running `ls /usr/lib/x86_64-linux-gnu/perl-base/unicore/lib/Lower` shows a file called `HINT-TRAPPED`.
 
 `cat /usr/lib/x86_64-linux-gnu/perl-base/unicore/lib/Lower HINT-TRAPPED` reads:
 
+```
 **Yahaha, you found me!**
 The next clue is in: `/usr/local/lib/python3.8/dist-packages/importlib_resources/compat/__pycache__
 `
 
 Watch out! The next clue is **trapped**. You'll need to read it out without `cd`ing into the directory; otherwise, the clue will self destruct!
+```
 
 Upon running `ls /usr/local/lib/python3.8/dist-packages/importlib_resources/compat/__pycache__`,` reveals a file named MEMO-TRAPPED.
 
@@ -143,34 +151,43 @@ Upon running `ls /usr/local/lib/python3.8/dist-packages/importlib_resources/comp
 
 The next clue is in: `/opt/aflplusplus/nyx_mode/QEMU-Nyx/tests/data/acpi`
 
+```
 The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
 
+```
 
 Running `cd /opt/aflplusplus/nyx_mode/QEMU-Nyx/tests/data/acpi` and `ls -a` shows a file named `.CUE`.
 
 `cat .CUE` reads:
 
+```
 
 **Congratulations**, you found the clue!
 The next clue is in: `/usr/include/gc`
+```
 
 After entering `/usr/include/gc`, running `ls -a` reveals a file called INFO.
 
 `cat INFO` reads:
 
+```
 **Great sleuthing!**
 The next clue is in: /usr/share/gap/doc/tut
 
 The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
 
+```
+
 Running `cd /usr/share/gap/doc/tut` and `ls -a` shows a file named `SPOILER`.
 
 `cat SPOILER` gives:
 
+```
+
 **CONGRATULATIONS!** Your perseverance has paid off, and you have found the flag!
 
 The flag is: `pwn.college{ojrDir7JoWDpC_u_6-SRvXah5Ed.dljM4QDLwQjN0czW}`
-
+```
 
 # Making Directories
 
