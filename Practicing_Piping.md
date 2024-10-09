@@ -108,6 +108,22 @@ The falg retrived is: `pwn.college{oI2va2HkTtCY5iOHOIc20Mm4nVo.ddjN1QDLwQjN0czW}
 
 # Redirecting inputs
 
+Use `echo COLLEGE > PWN` to redirect the output of `echo COLLEGE` to `PWN`
+
+Use `/challenge/run < PWN`  to redirect the file `PWN` as input to `/challenge/run` 
+
+This gives the output: 
+
+```
+Reading from standard input...
+Correct! You have redirected the PWN file into my standard input, and I read 
+the value 'COLLEGE' out of it!
+Here is your flag:
+pwn.college{ogJ17tFoB8Q0NR9aqMM8x0fGBZN.dBzN1QDLwQjN0czW}
+```
+
+
+
 # Grepping stored results
 
 redirect the output of `/challenge/run` to `/tmp/data.txt`
@@ -226,8 +242,8 @@ SECRET_ARG should be "o8iOYs61"
 ```
 
 run the command ` /challenge/pwn --secret o8iOYs61| /challenge/college` to get the flag .
-the output is:
 
+the output is:
 ```
 Processing...
 Correct! Passing secret value to /challenge/college...
@@ -237,7 +253,28 @@ pwn.college{o8iOYs61AnuFzbnQKPvWsqRg03B.dFjM5QDLwQjN0czW}
 
 
 # Writing to multiple programs
+
+Pipe `/challenge/hack` to `/challenge/the` and `/challenge/planet`
+
+```
+/challenge/hack | tee >(/challenge/the) | /challenge/planet
+
+```
+
+this gives the flag: `pwn.college{cIlKA1L9yIQwXNSG3Gcqw-YTeea.dBDO0UDLwQjN0czW}`
+
 # Split-piping stderr and stdout
 
+use `2>` to redirect the stderr to `/challenge/the` and use `|` to redirect stdout to `/challenge/planet`
 
+```
+/challenge/hack 2> >(/challenge/the) | /challenge/planet
+```
+this gives the output:
+
+```
+Congratulations, you have learned a redirection technique that even experts 
+struggle with! Here is your flag:
+pwn.college{QXx9zs0CIP2FaUPrGCN8cAwvYnf.dFDNwYDLwQjN0czW}
+```
 
