@@ -40,7 +40,7 @@ This retrives the flag: `pwn.college{YJgnWx9dBbL4qh5W9jV0UKfy6o6.dRjM4QDLwQjN0cz
 
 
 # Mixing Globes
-`cd` to `/challenges/fiels`.
+`cd` to `/challenges/files`.
 
 for extracting files named as `challenge , education , pwning` , use`[]` to wildcard initials and `*` to wildcard remaining characters.
 
