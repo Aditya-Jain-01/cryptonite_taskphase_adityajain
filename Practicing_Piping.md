@@ -159,7 +159,7 @@ The flag retrived is:`pwn.college{AE8-L8fkyDrrYdrAuB07IJVUD_M.dhTM4QDLwQjN0czW}`
 
 # Grepping live output
 
-The pipe `|` command can be used to avoide stroing results into a file . It redirects the standard output to another program.
+The pipe `|` command can be used to avoid storing results into a file . It redirects the standard output to another program.
 
 connect `/challenge/run` to `grep pwn.college` by using `|`.
 
